@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Béthuel AKOUTA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Manufacturing+Consent&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+<button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-header">
+        <div class="avatar">
+          <img src="Img/Beth_akt.jpg" alt="" onerror="this.remove()">
+          <span class="avatar-initials">NP</span>
+        </div>
+        <h1 class="name">Béthuel Sètondé AKOUTA</h1>
+        <p class="tagline" data-i18n="tagline">développeur full-stack</p>
+        <p class="path">BethuelAkouta</p>
+      </div>
+      <nav class="filetree">
+        <a class="file-link site-link" data-page="home" data-base="index.html" href="index.html">Home<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="about" data-base="about.html" href="about.html">About<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="skills" data-base="skills.html" href="skills.html">Skills<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="projects" data-base="projects.html" href="projects.html">Projects<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="experience" data-base="experience.html" href="experience.html">Experience<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="contact" data-base="contact.html" href="contact.html">Contact<span class="ext"></span></a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="prefs-row">
+        <button type="button" id="themeToggle" class="icon-btn" aria-pressed="false">
+          <span class="icon-sun" aria-hidden="true">☀</span>
+          <span class="icon-moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/tonpseudo" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/tonpseudo" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <p class="status"><span class="dot"></span><span data-i18n="status">disponible pour une mission</span></p>
+    </div>
+  </aside>
+
+  <main>
+    <section id="contact" class="section">
+      <span class="tab-label">Contact</span>
+      <h3 data-i18n="contact.heading">Contact</h3>
+      <p data-i18n="contact.p1">Une mission, une question, ou juste envie d'échanger : n'hésite pas à m'écrire.</p>
+      <div class="contact-links">
+        <a href="mailto:setondeakouta@gmail.com">setondeakouta@gmail.com</a>
+        <a href="https://github.com/Bethuel-124" target="_blank" rel="noopener">ghttps://github.com/Bethuel-124</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> <span data-i18n="footer.text">Béthuel AKOUTA. Site construit à la main.</span>
+    </footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

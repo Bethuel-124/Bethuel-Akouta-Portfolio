@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projets — Nom Prénom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Manufacturing+Consent&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+
+<button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-header">
+        <div class="avatar">
+          <img src="Img/Beth_akt.jpg" alt="" onerror="this.remove()">
+          <span class="avatar-initials">NP</span>
+        </div>
+        <h1 class="name">Béthuel Sètondé AKOUTA</h1>
+        <p class="tagline" data-i18n="tagline">développeur full-stack</p>
+        <p class="path">~/BethuelAkouta</p>
+      </div>
+      <nav class="filetree">
+        <a class="file-link site-link" data-page="home" data-base="index.html" href="index.html">Home<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="about" data-base="about.html" href="about.html">About<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="skills" data-base="skills.html" href="skills.html">Skills<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="projects" data-base="projects.html" href="projects.html">Projects<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="experience" data-base="experience.html" href="experience.html">Experience<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="contact" data-base="contact.html" href="contact.html">Contact<span class="ext"></span></a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="prefs-row">
+        <button type="button" id="themeToggle" class="icon-btn" aria-pressed="false">
+          <span class="icon-sun" aria-hidden="true">☀</span>
+          <span class="icon-moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/tonpseudo" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/tonpseudo" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <p class="status"><span class="dot"></span><span data-i18n="status">disponible pour une mission</span></p>
+    </div>
+  </aside>
+
+  <main>
+    <section id="projects" class="section">
+      <span class="tab-label">Projects/</span>
+      <h3 data-i18n="projects.heading">Projets</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <h4 data-i18n="projects.p1.title">Nom du projet 1</h4>
+            <a class="project-link" href="#" target="_blank" rel="noopener" data-i18n="projects.viewCode">voir le code</a>
+          </div>
+          <p data-i18n="projects.p1.desc">Description courte : le problème résolu, le contexte, et un résultat concret si possible (ex. temps de chargement réduit, nombre d'utilisateurs).</p>
+          <ul class="tag-list">
+            <li>React</li><li>Node.js</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h4 data-i18n="projects.p2.title">Nom du projet 2</h4>
+            <a class="project-link" href="#" target="_blank" rel="noopener" data-i18n="projects.viewCode">voir le code</a>
+          </div>
+          <p data-i18n="projects.p2.desc">Description courte du deuxième projet : ce que tu as construit, ton rôle, et une difficulté technique intéressante que tu as résolue.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>FastAPI</li><li>Docker</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h4 data-i18n="projects.p3.title">Nom du projet 3</h4>
+            <a class="project-link" href="#" target="_blank" rel="noopener" data-i18n="projects.viewCode">voir le code</a>
+          </div>
+          <p data-i18n="projects.p3.desc">Un troisième projet, idéalement varié par rapport aux deux précédents (par exemple un outil personnel, une contribution open source, ou un projet freelance).</p>
+          <ul class="tag-list">
+            <li>TypeScript</li><li>Next.js</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> <span data-i18n="footer.text">Béthuel AKOUTA. Site construit à la main.</span>
+    </footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

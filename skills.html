@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Compétences — Béthuel AKOUTA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Manufacturing+Consent&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="skills">
+
+<button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-header">
+        <div class="avatar">
+          <img src="Img/Beth_akt.jpg" alt="" onerror="this.remove()">
+          <span class="avatar-initials">NP</span>
+        </div>
+        <h1 class="name">Béthuel Sètondé AKOUTA</h1>
+        <p class="tagline" data-i18n="tagline">développeur full-stack</p>
+        <p class="path">~/nom-prenom</p>
+      </div>
+      <nav class="filetree">
+        <a class="file-link site-link" data-page="home" data-base="index.html" href="index.html">Home<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="about" data-base="about.html" href="about.html">About<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="skills" data-base="skills.html" href="skills.html">Skills<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="projects" data-base="projects.html" href="projects.html">Projects<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="experience" data-base="experience.html" href="experience.html">Experience<span class="ext"></span></a>
+        <a class="file-link site-link" data-page="contact" data-base="contact.html" href="contact.html">Contact<span class="ext"></span></a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="prefs-row">
+        <button type="button" id="themeToggle" class="icon-btn" aria-pressed="false">
+          <span class="icon-sun" aria-hidden="true">☀</span>
+          <span class="icon-moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/tonpseudo" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/tonpseudo" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <p class="status"><span class="dot"></span><span data-i18n="status">disponible pour une mission</span></p>
+    </div>
+  </aside>
+
+  <main>
+    <section id="skills" class="section alt">
+      <span class="tab-label">Skills</span>
+      <h3 data-i18n="skills.heading">Compétences</h3>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 data-i18n="skills.group1.title">langages</h4>
+          <ul>
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 data-i18n="skills.group2.title">frameworks</h4>
+          <ul>
+            <li>React / Next.js</li>
+            <li>Node.js / Express</li>
+            <li>Django ou FastAPI</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 data-i18n="skills.group3.title">infra &amp; outils</h4>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>Git / CI-CD</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 data-i18n="skills.group4.title">autres</h4>
+          <ul>
+            <li data-i18n="skills.other.tests">Tests automatisés</li>
+            <li data-i18n="skills.other.api">API REST / GraphQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> <span data-i18n="footer.text">Béthuel AKOUTA. Site construit à la main.</span>
+    </footer>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
